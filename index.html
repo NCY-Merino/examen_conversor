@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de moneda | Examen NCY-Merino</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+    <h1>Conversor de moneda Nacional</h1>
+    <div class="contenedor">
+        <h2>Pesos CLP</h2>
+        <input type="text" name="pesos-clp" id="pesos-clp" placeholder="Ingrese el monto en CLP">
+        <h4>Moneda a convertir:</h4>
+        <select class="custom-select" name="moneda-cambios" id="moneda-cambios">
+            <option value="" selected>Seleccione moneda</option>
+        </select>
+        <button class="btn-convertir" onclick="convertir()">Convertir</button>
+        <h3><span id="total">...</span></h3>
+        <span id="mensaje-error"></span>
+    </div>
+
+    <div class="grafico" id="contenedor-chart">
+        <canvas id="myChart"></canvas>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
